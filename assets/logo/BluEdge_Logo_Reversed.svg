@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80" width="400" height="80">
+  
+  <rect width="400" height="80" rx="4" fill="#0A2E5C"></rect>
+  <text x="20" y="52" class="blu">Blu</text>
+  <text x="132" y="52" class="edge">Edge</text>
+</svg>
