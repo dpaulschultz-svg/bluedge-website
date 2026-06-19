@@ -378,7 +378,6 @@ body[data-hero="minimal"] .hero-grad {
   margin-bottom: 22px;
   text-align: center;
 }
-.seg-head > div { display: block; }
 .seg-title {
   font-size: 19px; font-weight: 700; color: var(--navy);
   letter-spacing: -0.3px; margin-bottom: 6px;
@@ -387,50 +386,18 @@ body[data-hero="minimal"] .hero-grad {
   font-size: 13.5px; color: var(--slate); line-height: 1.55;
 }
 
-.seg-clients {
-  border-top: 1px solid var(--hair);
-  border-bottom: 1px solid var(--hair);
-  padding: 20px 0 22px;
-  margin-bottom: 26px;
+.seg-icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 60px; height: 60px;
+  border-radius: 16px;
+  margin-bottom: 18px;
+  transition: transform .35s var(--ease);
 }
-.seg-clients-label {
-  display: block;
-  font-size: 10px; font-weight: 600; letter-spacing: 2px;
-  text-transform: uppercase; color: var(--slate);
-  margin-bottom: 16px;
-}
-.seg-logos {
-  display: flex; align-items: center; justify-content: center;
-  gap: 28px;
-  flex-wrap: wrap;
-  min-height: 68px;
-  width: 100%;
-}
-.seg-logo {
-  flex: 0 1 auto;
-  display: flex; align-items: center; justify-content: center;
-  height: 68px;
-  min-width: 0;
-}
-.seg-logo img {
-  max-height: 44px; width: auto; max-width: 100%;
-  object-fit: contain;
-  filter: grayscale(100%);
-  opacity: .75;
-  mix-blend-mode: multiply;
-  transition: opacity .3s, filter .3s, transform .3s;
-}
-.segment:hover .seg-logo img { filter: grayscale(0); opacity: 1; }
-
-/* Berkeley SkyDeck is stacked (2 lines) — give it more height */
-.seg-logo img[alt="Berkeley SkyDeck"] {
-  max-height: 64px;
-}
-/* Bionaut wordmark renders heavy at default size — pull it back */
-.seg-logo img[alt="Bionaut Labs"] {
-  max-height: 24px;
-  max-width: 130px;
-}
+.seg-icon svg { width: 30px; height: 30px; }
+.seg-icon.health   { background: rgba(27,107,176,0.10); color: var(--blue-light); }
+.seg-icon.pharma   { background: rgba(10,46,92,0.09);   color: var(--navy); }
+.seg-icon.investor { background: rgba(0,180,160,0.12);  color: var(--teal); }
+.segment:hover .seg-icon { transform: translateY(-3px) scale(1.05); }
 .seg-eco {
   display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px;
   font-size: 12px; color: var(--navy); font-weight: 500;
